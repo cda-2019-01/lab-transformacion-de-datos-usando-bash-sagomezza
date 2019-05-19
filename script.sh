@@ -33,7 +33,7 @@ do
         echo ${a[1]} > output-data/aux.csv
         for res in $(sed 's/,/ /g' output-data/aux.csv) 
         do  
-            echo $res
+            echo $file,$x,${a[0]},$res
         done
         x=$((x+1))
         x=1
